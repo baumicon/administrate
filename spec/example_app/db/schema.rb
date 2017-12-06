@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20170508183744) do
     t.datetime "updated_at", null: false
     t.boolean "email_subscriber"
     t.string "kind", default: "standard", null: false
+    t.date "birth_date"
+    t.time "birth_time"
   end
 
   create_table "delayed_jobs", id: :serial, force: :cascade do |t|
